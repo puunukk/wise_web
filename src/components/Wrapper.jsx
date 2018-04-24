@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import logo from "../components/wisemedia_logo.svg";
 
 export class Container extends Component {
   render() {
@@ -27,5 +28,15 @@ export class Slope extends Component {
         { this.props.children }
       </div>
     )
+  }
+}
+
+export class Logo extends Component {
+  render() {
+    return (
+      <a class="wm-brand" herf="/">
+        <img src={logo} alt="Wisemedia white" />
+      </a>
+    );
   }
 }

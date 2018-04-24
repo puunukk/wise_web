@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import Home from "./views/Home";
+import Head from "./views/Head";
+import Section from "./views/Section";
 
 class App extends Component {
   render() {
     return (
-      <Home />
+      <div class="mobile-overflow-wrapper">
+        <Head />
+        <Section />
+      </div>
     );
   }
 }
