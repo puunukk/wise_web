@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import logo from "../components/wisemedia_logo.svg";
 
 export class Container extends Component {
   render() {
@@ -7,7 +6,7 @@ export class Container extends Component {
       <div className="container">
         { this.props.children }
       </div>
-    )
+    );
   }
 }
 
@@ -17,7 +16,7 @@ export class Row extends Component {
       <div className="row">
         { this.props.children }
       </div>
-    )
+    );
   }
 }
 
@@ -27,16 +26,24 @@ export class Slope extends Component {
       <div className="slope">
         { this.props.children }
       </div>
-    )
+    );
   }
 }
-
-export class Logo extends Component {
+export class SlopeRight extends Component {
   render() {
     return (
-      <a class="wm-brand" herf="/">
-        <img src={logo} alt="Wisemedia white" />
-      </a>
+      <div className="slope-right">
+        {this.props.children}
+      </div>
+    );
+  }
+}
+export class SlopeLeft extends Component {
+  render() {
+    return (
+      <div className="slope-left">
+        {this.props.children}
+      </div>
     );
   }
 }

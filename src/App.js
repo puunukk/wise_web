@@ -6,7 +6,7 @@ import Section from "./views/Section";
 class App extends Component {
   render() {
     return (
-      <div class="mobile-overflow-wrapper">
+      <div className="mobile-overflow-wrapper">
         <Head />
         <Section />
       </div>

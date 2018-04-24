@@ -2,3 +2,51 @@ $theme-colors: (
   primary: #104476,
   secondary: red
 ) !default;
+.mobile-overflow-wrapper {
+  overflow-x: hidden;
+}
+header {
+  height: 100px;
+  background: #104476;
+}
+.sloped .slope-left {
+  -moz-transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+  transform-origin: left center;
+  margin: 0 -50px;
+}
+.sloped .slope-right {
+  -moz-transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  transform: rotate(2deg);
+  transform-origin: left center;
+  margin: 0 -50px;
+}
+.jumbotron {
+  padding: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #eeeeee;
+}
+img {
+  vertical-align: middle;
+}
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
