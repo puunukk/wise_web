@@ -8,7 +8,7 @@ var i = "img-responsive center-block";
 export class Logo extends Component {
 	render() {
 		return (
-			<a className={i} herf="/">
+			<a className="wm-brand" herf="/">
 				<img src={logo} alt="Wisemedia white" />
 			</a>
 		);
@@ -23,7 +23,7 @@ export class Banner extends Component {
 	}
 }
 
-export class Banner_text extends Component {
+export class BannerText extends Component {
 	render() {
 		return (
 			<img className={i} src={banner_text} alt="Slogan imagine" />

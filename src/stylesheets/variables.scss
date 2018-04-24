@@ -36,11 +36,7 @@ header {
 img {
   vertical-align: middle;
 }
-.img-responsive,
-.thumbnail > img,
-.thumbnail a > img,
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
+.img-responsive {
   display: block;
   max-width: 100%;
   height: auto;
@@ -49,4 +45,18 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.wm-brand img {
+  width: 50%;
+  position: relative;
+  top: 15px;
+}
+.rotate-negative {
+  -moz-transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  transform: rotate(2deg);
+  transform-origin: left center;
+  margin: 0 -50px;
 }
